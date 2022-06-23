@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.bupa-container {
+		@apply bg-blue-400 w-full h-screen overflow-y-auto;
+	}
+
+	.bupa-form {
+		@apply w-full max-h-fit flex-col flex gap-4;
+	}
+
+	.bupa-form-group {
+		@apply flex-1 flex flex-row  justify-between gap-2 items-end;
+	}
+
+	.form-label {
+		@apply text-gray-800 bg-transparent;
+	}
+
+	.form-input {
+		@apply text-gray-600 bg-white rounded shadow-sm h-8 w-44 pl-2;
+	}
+
+	.header-font {
+		@apply text-2xl font-bold text-blue-400;
+	}
+}
